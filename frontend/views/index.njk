@@ -1,0 +1,68 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+        Welcome to {{ serviceName }}
+      </h1>
+
+      <p class="govuk-body">
+        This is a GOV.UK service that demonstrates the integration of a Node.js Express frontend with a Kotlin Spring Boot backend.
+      </p>
+
+      <h2 class="govuk-heading-m">Before you start</h2>
+      <p class="govuk-body">You'll need:</p>
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Your personal details</li>
+        <li>Your contact information</li>
+        <li>Any relevant documentation</li>
+      </ul>
+
+      {{ govukButton({
+        text: "Start now",
+        href: "/start",
+        isStartButton: true
+      }) }}
+
+      <h2 class="govuk-heading-m">Other ways to apply</h2>
+      <p class="govuk-body">
+        You can also apply by phone or post.
+      </p>
+      <p class="govuk-body">
+        Telephone: 0800 123 4567<br>
+        Monday to Friday, 9am to 5pm (except public holidays)
+      </p>
+      <p class="govuk-body">
+        <a href="#" class="govuk-link">Find out about call charges</a>
+      </p>
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+      <aside class="app-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Related content
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a class="govuk-link" href="#">
+                Related link 1
+              </a>
+            </li>
+            <li>
+              <a class="govuk-link" href="#">
+                Related link 2
+              </a>
+            </li>
+            <li>
+              <a class="govuk-link" href="#">
+                Related link 3
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+    </div>
+  </div>
+{% endblock %} 

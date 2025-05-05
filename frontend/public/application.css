@@ -1,0 +1,12 @@
+/* Custom styles for the application */
+
+.app-related-items {
+  border-top: 10px solid #005ea5;
+  padding-top: 15px;
+}
+
+.app-related-items .govuk-heading-m {
+  margin-top: 0;
+}
+
+/* Add any additional custom styles below */ 
